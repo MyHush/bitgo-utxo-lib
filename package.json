@@ -1,35 +1,35 @@
 {
-  "name": "bitgo-utxo-lib",
-  "version": "1.4.0",
-  "description": "Client-side Bitcoin JavaScript library",
-  "main": "./src/index.js",
-  "engines": {
-    "node": ">=4.0.0"
-  },
-  "keywords": [
-    "bitgo",
-    "utxo",
-    "bitcoinjs",
-    "bitcoin",
-    "zcash",
-    "dash",
-    "btch",
-    "Hush",
-    "browserify",
-    "javascript"
-  ],
-  "scripts": {
-    "coverage-report": "nyc report --reporter=lcov",
-    "coverage-html": "nyc report --reporter=html",
-    "coverage": "nyc --check-coverage --branches 90 --functions 90 mocha",
-    "integration": "mocha test/integration/",
-    "standard": "standard",
-    "test": "npm run standard && npm run coverage",
-    "unit": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gilardh/bitgo-utxo-lib.git"
+    "name": "bitgo-utxo-lib",
+    "version": "1.4.1",
+    "description": "Client-side Bitcoin JavaScript library",
+    "main": "./src/index.js",
+    "engines": {
+      "node": ">=4.0.0"
+    },
+    "keywords": [
+      "bitgo",
+      "utxo",
+      "bitcoinjs",
+      "bitcoin",
+      "zcash",
+      "dash",
+      "btch",
+      "Hush",
+      "browserify",
+      "javascript"
+    ],
+    "scripts": {
+      "coverage-report": "nyc report --reporter=lcov",
+      "coverage-html": "nyc report --reporter=html",
+      "coverage": "nyc --check-coverage --branches 90 --functions 90 mocha",
+      "integration": "mocha test/integration/",
+      "standard": "standard",
+      "test": "npm run standard && npm run coverage",
+      "unit": "mocha"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/gilardh/bitgo-utxo-lib.git"
   },
   "files": [
     "src"
@@ -65,8 +65,5 @@
     "sinon": "^1.12.2",
     "standard": "^9.0.2"
   },
-  "license": "MIT",
-  "optionalDependencies": {
-    "secp256k1": "^3.5.2"
-  }
+  "license": "MIT"
 }

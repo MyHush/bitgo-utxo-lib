@@ -1,15 +1,7 @@
 var createHash = require('create-hash')
-var crypto = require('crypto')
 
 function ripemd160 (buffer) {
-  var hash = 'rmd160'
-  var supportedHashes = crypto.getHashes()
-  // some environments (electron) only support the long alias
-  if (supportedHashes.indexOf(hash) === -1 && supportedHashes.indexOf('ripemd160') !== -1) {
-    hash = 'ripemd160'
-  }
-
-  return createHash(hash).update(buffer).digest()
+  return createHash('rmd160').update(buffer).digest()
 }
 
 function sha1 (buffer) {
